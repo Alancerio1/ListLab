@@ -38,18 +38,18 @@ public class ListLab {
 //    }
 //    
         //Challenge 2
-//        Employee e1 = new Employee("1111", "111-222", "Bob");
-//        Employee e2 = new Employee("2222", "333-444", "Nick");
-//        Employee e3 = new Employee("3333", "555-666", "bob");
-//
-//        List<String> employeeList = new ArrayList<>();
-//        employeeList.add(e1.toString());
-//        employeeList.add(e2.toString());
-//        employeeList.add(e3.toString());
-//        
-//        for (String s : employeeList) {
-//            System.out.println(s);
-//        }
+        Employee e1 = new Employee("1111", "111-222", "Bob");
+        Employee e2 = new Employee("2222", "333-444", "Nick");
+        Employee e3 = new Employee("3333", "555-666", "bob");
+
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(e1);
+        employeeList.add(e2);
+        employeeList.add(e3);
+        
+        for (Employee s : employeeList) {
+            System.out.println(s);
+        }
 //
         //challenge 3
 //        Employee e1 = new Employee("1111", "111-222", "Bob");
@@ -69,13 +69,13 @@ public class ListLab {
 //         }
         //challenge 4
      
-   Set<Employee> emp = new HashSet<>();
-        emp.add(new Employee("1111", "1234-1111", "Nick"));
-        emp.add(new Employee("2222", "1234-2222", "Alex"));
-        emp.add(new Employee("2222", "1234-4444", "Tom"));
-        emp.add(new Employee("3333", "1234-2222", "Alex"));
-        for (Employee e : emp) {
-            System.out.println(e);
-        }
+//   Set<Employee> emp = new HashSet<>();
+//        emp.add(new Employee("1111", "1234-1111", "Nick"));
+//        emp.add(new Employee("2222", "1234-2222", "Alex"));
+//        emp.add(new Employee("2222", "1234-4444", "Tom"));
+//        emp.add(new Employee("3333", "1234-2222", "Alex"));
+//        for (Employee e : emp) {
+//            System.out.println(e);
+//        }
     }
 }
