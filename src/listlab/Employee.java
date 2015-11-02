@@ -12,25 +12,14 @@ import java.util.Objects;
  * @author alancerio18
  */
 public class Employee {
-    private String address;
+    private String lastName;
+    private String firstName;
     private String ssn;
-    private String name;
 
-    public Employee(String address, String ssn,String name) {
-        this.address = address;
+    public Employee(String lastName, String firstName, String ssn) {
+        this.lastName = lastName;
+        this.firstName = firstName;
         this.ssn = ssn;
-        this.name= name;
-    }
-    @Override
-    public String toString(){
-        return (name + " " + address + " " + ssn);
-    };
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getSsn() {
@@ -41,11 +30,33 @@ public class Employee {
         this.ssn = ssn;
     }
 
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+   
+       @Override
+    public String toString(){
+        return (firstName + " " + lastName + " " + ssn);
+    };
+
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 11 * hash + Objects.hashCode(this.ssn);
-        hash = 11 * hash + Objects.hashCode(this.name);
+        hash = 89 * hash + Objects.hashCode(this.ssn);
         return hash;
     }
 
@@ -61,12 +72,11 @@ public class Employee {
         if (!Objects.equals(this.ssn, other.ssn)) {
             return false;
         }
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
         return true;
     }
-
+    
+    
+   
    
   
 

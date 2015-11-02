@@ -38,24 +38,24 @@ public class ListLab {
 //    }
 //    
         //Challenge 2
-        Employee e1 = new Employee("1111", "111-222", "Bob");
-        Employee e2 = new Employee("2222", "333-444", "Nick");
-        Employee e3 = new Employee("3333", "555-666", "bob");
-
-        List<Employee> employeeList = new ArrayList<>();
-        employeeList.add(e1);
-        employeeList.add(e2);
-        employeeList.add(e3);
-        
-        for (Employee s : employeeList) {
-            System.out.println(s);
-        }
+//        Employee e1 = new Employee("Bob", "John", "111-11-111");
+//        Employee e2 = new Employee("Sally", "may", "222-22-222");
+//        Employee e3 = new Employee("John", "Doe", "333-33-333");
+//
+//        List<Employee> employeeList = new ArrayList<>();
+//        employeeList.add(e1);
+//        employeeList.add(e2);
+//        employeeList.add(e3);
+//        
+//        for (Employee s : employeeList) {
+//            System.out.println(s);
+//        }
 //
         //challenge 3
-//        Employee e1 = new Employee("1111", "111-222", "Bob");
-//        Employee e2 = new Employee("2222", "333-444", "Nick");
-//        Dog d1 = new Dog("woof","wolf");
-//        Dog d2 = new Dog("obi","maltipoo");
+//       Employee e1 = new Employee("Bob", "John", "111-11-111");
+//       Employee e2 = new Employee("Sally", "may", "222-22-222");
+//        Dog d1 = new Dog("woof",123);
+//        Dog d2 = new Dog("obi",124);
 //        
 //         List myList = new ArrayList();
 //        myList.add(e1.toString());
@@ -69,13 +69,18 @@ public class ListLab {
 //         }
         //challenge 4
      
-//   Set<Employee> emp = new HashSet<>();
-//        emp.add(new Employee("1111", "1234-1111", "Nick"));
-//        emp.add(new Employee("2222", "1234-2222", "Alex"));
-//        emp.add(new Employee("2222", "1234-4444", "Tom"));
-//        emp.add(new Employee("3333", "1234-2222", "Alex"));
-//        for (Employee e : emp) {
-//            System.out.println(e);
-//        }
+    Set<Employee> emp = new HashSet<>();
+        Employee e1 = new Employee("Bob", "John", "111-11-111");
+        Employee e2 = new Employee("Sally", "may", "222-22-222");
+        Employee e3 = new Employee("John", "Doe", "333-33-333");
+        Employee e4 = new Employee("John", "Doe", "333-33-333");
+        
+        emp.add(e1);
+        emp.add(e2);
+        emp.add(e3);
+        emp.add(e4);
+        for (Employee e : emp) {
+            System.out.println(e);
+        }
     }
 }

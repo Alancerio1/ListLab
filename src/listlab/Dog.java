@@ -10,18 +10,17 @@ package listlab;
  * @author alancerio18
  */
 public class Dog {
-    private String name;
-    private String breed;
+      private String name;
+    private int rabiesId;
 
-    public Dog(String name, String breed) {
+    public Dog() {
+    }
+
+    public Dog(String name, int rabiesId) {
         this.name = name;
-        this.breed = breed;
+        this.rabiesId = rabiesId;
     }
     
-    @Override
-    public String toString(){
-        return (name + " " + breed);
-    }
 
     public String getName() {
         return name;
@@ -31,14 +30,20 @@ public class Dog {
         this.name = name;
     }
 
-    public String getBreed() {
-        return breed;
+    public int getRabiesId() {
+        return rabiesId;
     }
 
-    public void setBreed(String breed) {
-        this.breed = breed;
+    public void setRabiesId(int rabiesId) {
+        this.rabiesId = rabiesId;
     }
     
+    @Override
+    public String toString(){
+        return (name + " " + rabiesId);
+    }
+
+  
     
     
 }
