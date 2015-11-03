@@ -8,6 +8,7 @@ package listlab;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -52,35 +53,45 @@ public class ListLab {
 //        }
 //
         //challenge 3
-//       Employee e1 = new Employee("Bob", "John", "111-11-111");
-//       Employee e2 = new Employee("Sally", "may", "222-22-222");
-//        Dog d1 = new Dog("woof",123);
-//        Dog d2 = new Dog("obi",124);
-//        
-//         List myList = new ArrayList();
-//        myList.add(e1.toString());
-//        myList.add(e2.toString());
-//        myList.add(d1.toString());
-//        myList.add(d2.toString());
-//        
+       Employee e1 = new Employee("Bob", "John", "111-11-111");
+       Employee e2 = new Employee("Sally", "may", "222-22-222");
+        Dog d1 = new Dog("woof",123);
+        Dog d2 = new Dog("obi",124);
+        
+         List myList = new ArrayList();
+        myList.add(e1);
+        myList.add(e2);
+        myList.add(d1);
+        myList.add(d2);
+        
 //         for(int i=0;i < myList.size();i++){
 //            String item = (String)myList.get(i);
 //            System.out.println(item);
 //         }
+         for(int i=0; i < myList.size(); i++) {
+            Object obj = myList.get(i);
+            if(obj instanceof Employee) {
+                Employee e = (Employee)obj;
+                System.out.println(e);
+            } else if(obj instanceof Dog) {
+                Dog d = (Dog)obj;
+                System.out.println(d);
+            }
+         }
         //challenge 4
      
-    Set<Employee> emp = new HashSet<>();
-        Employee e1 = new Employee("Bob", "John", "111-11-111");
-        Employee e2 = new Employee("Sally", "may", "222-22-222");
-        Employee e3 = new Employee("John", "Doe", "333-33-333");
-        Employee e4 = new Employee("John", "Doe", "333-33-333");
-        
-        emp.add(e1);
-        emp.add(e2);
-        emp.add(e3);
-        emp.add(e4);
-        for (Employee e : emp) {
-            System.out.println(e);
-        }
+//    Set<Employee> emp = new LinkedHashSet<>();
+//        Employee e1 = new Employee("Bob", "John", "111-11-111");
+//        Employee e2 = new Employee("Sally", "may", "222-22-222");
+//        Employee e3 = new Employee("John", "Doe", "333-33-333");
+//        Employee e4 = new Employee("John", "Doe", "333-33-333");
+//        
+//        emp.add(e1);
+//        emp.add(e2);
+//        emp.add(e3);
+//        emp.add(e4);
+//        for (Employee e : emp) {
+//            System.out.println(e);
+//        }
     }
 }
